@@ -271,7 +271,7 @@ class LightFM(object):
                     item_embeddings[Item][element] = ItemVectorElements[element]
                 Item = Item + 1
 
-            self.item_embeddings = poi_embeddings
+            self.item_embeddings = item_embeddings
 
             print("Pre-Train Item Embedding Finished.")
 
