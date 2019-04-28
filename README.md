@@ -2,7 +2,7 @@
 Pre-train embedding in LightFM recommender system framework
 
 ## How to use
-When you install LightFM package, you will replace the `lightfm.py` with the original one. Here, we just implement the `Item Embedding` but you can follow the structure and implement the `User Embedding`. You can use a `.txt` file that each row shows a user of item embedding and columns are the embeddings.
+When you install LightFM package, you will replace the `lightfm.py` with the original one. Here, we just implement the `Item Embedding` but you can follow the structure and implement the `User Embedding`. You can use a `.txt` file that each row shows the item embedding.
 
 ## Method
 
@@ -34,7 +34,7 @@ if self.item_pretrain:
       item_embeddings[Item][element] = ItemVectorElements[element]
     Item = Item + 1
 
-  self.item_embeddings = poi_embeddings
+  self.item_embeddings = item_embeddings
 
   print("Pre-Train Item Embedding Finished.")
 
